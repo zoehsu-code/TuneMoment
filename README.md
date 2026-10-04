@@ -13,12 +13,18 @@ Built at **MHacks 2026**.
 
 ### From video to soundtrack
 
-Compare the baseline with our method. Click either preview to watch the video with sound.
+Play either video below to compare the baseline with our method. Both videos include sound.
 
-| Baseline — bananaMOV | Ours — TuneMoment |
-| :---: | :---: |
-| [![Watch the baseline demo](docs/demo/bananaMOV.jpg)](https://github.com/zoehsu-code/video-music-generate/blob/main/docs/demo/bananaMOV.mp4) | [![Watch our demo](docs/demo/our.jpg)](https://github.com/zoehsu-code/video-music-generate/blob/main/docs/demo/our.mp4) |
-| [▶ Watch Baseline](https://github.com/zoehsu-code/video-music-generate/blob/main/docs/demo/bananaMOV.mp4) | [▶ Watch Ours](https://github.com/zoehsu-code/video-music-generate/blob/main/docs/demo/our.mp4) |
+<table>
+  <tr>
+    <th width="50%">Baseline — bananaMOV</th>
+    <th width="50%">Ours — TuneMoment</th>
+  </tr>
+  <tr>
+    <td><video src="https://github.com/user-attachments/assets/89c8cafc-15c2-4bae-b099-c575c9ba7d62" controls width="360"></video></td>
+    <td><video src="https://github.com/user-attachments/assets/4190ad6f-146f-40a7-9457-beaec18ce786" controls width="360"></video></td>
+  </tr>
+</table>
 
 ## ✨ What is TuneMoment?
 

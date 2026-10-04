@@ -2,7 +2,7 @@
 
 ### Turn moments into music.
 
-**TuneMoment is an AI-native social platform that understands your videos and creates original soundtracks around the moments inside them.**
+**TuneMoment is an AI-native social platform that understands your videos and generates original soundtracks aligned with the moments that matter.**
 
 Upload a video. TuneMoment watches what happens, understands how the moment unfolds over time, and composes music that moves with it.
 
@@ -174,20 +174,20 @@ The music model is then free to decide exactly how to express that intent.
 
 ---
 
-## 🏟️ What's Next: A Blind Multimodal Model Arena
+## 🏟️ TuneMoment Music Arena
 
-TuneMoment is designed to eventually become more than a creation platform.
+### Blind evaluation of multimodal AI through real human choices
 
-It can also become a **blind, real-world evaluation arena for multimodal AI models**.
+TuneMoment is not only a social creation platform. Its architecture also supports a **Music Arena** for comparing how different multimodal AI models understand the same kinds of human moments.
 
-Imagine that users upload videos normally, without knowing which multimodal model interprets them.
+Users simply upload videos and create as usual. They do not need to choose — or even know — which multimodal model interprets their video.
 
-Behind the scenes:
+Behind the scenes, TuneMoment can route videos to different multimodal models while keeping the rest of the music-generation pipeline controlled.
 
 ```text
                     Video
                       │
-              Randomized Routing
+                 Blind Routing
                 ┌─────┴─────┐
                 ▼           ▼
               Grok        Gemini
@@ -200,6 +200,9 @@ Behind the scenes:
               Same Music Model
                       │
                       ▼
+           Generated Soundtrack
+                      │
+                      ▼
                 User Behavior
           ┌───────────┼───────────┐
           ▼           ▼           ▼
@@ -210,15 +213,20 @@ Behind the scenes:
                ┌──────┼──────┐
                ▼      ▼      ▼
               Like  Share   Watch
+                      │
+                      ▼
+             Preference Signals
+                      │
+                      ▼
+          Which model understands
+             the moment better?
 ```
 
 Instead of asking users:
 
 > *Which AI model do you think is better?*
 
-TuneMoment could learn from what people actually do.
-
-Potential preference signals include:
+TuneMoment can learn from what people actually do.
 
 | Signal | What it may tell us |
 | --- | --- |
@@ -230,10 +238,19 @@ Potential preference signals include:
 | Shares | Was the final audiovisual result compelling? |
 | Watch completion | Did the finished moment retain attention? |
 
-Model identity could remain hidden from the user, reducing brand bias.
+Because model identity remains hidden from the user, these signals can reflect **real creative preferences rather than brand preferences**.
 
-By keeping the downstream music model and generation settings controlled, TuneMoment could compare how different multimodal models understand real human moments.
+By keeping the downstream music model and generation settings controlled, TuneMoment can compare how different multimodal models interpret real human moments.
 
+The result is a different kind of AI evaluation:
+
+> **Not which model scores higher on a benchmark — but which model creates interpretations people actually choose to keep, publish, and share.**
+
+### **Which multimodal model actually understands the moment better?**
+
+> **Current demo:** TuneMoment supports both Grok and Gemini as video-understanding routes. Grok is currently active; the Gemini route is disabled in the demo environment because a Gemini API token is not currently available.
+
+**Every moment is a prompt. Every choice is feedback.**
 ### Why does this matter?
 
 Traditional benchmarks usually ask whether a model can correctly answer questions about a fixed dataset.
@@ -268,7 +285,7 @@ TuneMoment could turn millions of everyday creative decisions into implicit huma
 ┌─────────────────────────────────┐
 │   Multimodal Video Reasoning    │
 │                                 │
-│              Grok               │
+│          Grok  ·   Gemini       │
 └────────────────┬────────────────┘
                  │
                  ▼
@@ -408,8 +425,8 @@ Our long-term question is:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/zoehsu-code/jamhacks2026.git
-cd jamhacks2026
+git clone https://github.com/zoehsu-code/tunemoment.git
+cd tunemoment
 ```
 
 ### 2. Install dependencies
